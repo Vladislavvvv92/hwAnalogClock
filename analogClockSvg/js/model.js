@@ -1,10 +1,12 @@
-let first = document.getElementById('first');
-let hourArrow = document.getElementById('hourArrow');
-let secondArrow = document.getElementById('secondArrow');
-let minuteArrow = document.getElementById('minuteArrow');
+export default {
+    first: document.getElementById('first'),
+    hourArrow: document.getElementById('hourArrow'),
+    secondArrow: document.getElementById('secondArrow'),
+    minuteArrow: document.getElementById('minuteArrow'),
 
-let argNumb = 0;
-let argStrok = 0;
+    argNumb: 0,
+    argStrok: 0,
 
-let stepArrovInRadian = (((2 * Math.PI) / 360) * 6);
-let stepArrovInRadianForNumb = (((2 * Math.PI) / 360) * 30);
+    stepArrovInRadian: (((2 * Math.PI) / 360) * 6),
+    stepArrovInRadianForNumb: (((2 * Math.PI) / 360) * 30),
+}

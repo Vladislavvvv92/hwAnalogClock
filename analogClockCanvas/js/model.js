@@ -1,18 +1,22 @@
-let canvas = document.getElementById('canvas');
-let c = canvas.getContext('2d');
+export default class Model {
+    constructor(){
+        this.canvas = document.getElementById('canvas');
+        this.c =  this.canvas.getContext('2d');
+        this.argNumb = 0;
+        this.argStrok = 0;
 
-let argNumb = 0;
-let argStrok = 0;
+        this.radiusHours =  this.c.canvas.height / 2 - 130;
+        this.radiusNumber = this.c.canvas.height / 2 - 40;
+        this.radiusSecond = this.c.canvas.height / 2 - 80;
+        this.radiusMinutes = this.c.canvas.height / 2 - 90;
+        this.radiusStrokLineTo = this.c.canvas.height / 2 - 5;
+        this.radiusStrokMoveTo = this.c.canvas.height / 2 - 20;
 
-let radiusHours = c.canvas.height / 2 - 130;
-let radiusNumber = c.canvas.height / 2 - 40;
-let radiusSecond = c.canvas.height / 2 - 80;
-let radiusMinutes = c.canvas.height / 2 - 90;
+        this.stepArrovInRadian = (((2 * Math.PI) / 360) * 6);
+        this.stepArrovInRadianForNumb = (((2 * Math.PI) / 360) * 30);
 
-let radiusStrokLineTo = c.canvas.height / 2 - 5;
-let radiusStrokMoveTo = c.canvas.height / 2 - 20;
+        this.grd = this.c.createRadialGradient(135.000, 135.000, 0.000, 135.000, 135.000, 150.000);
+    }
 
-let stepArrovInRadian = (((2 * Math.PI) / 360) * 6);
-let stepArrovInRadianForNumb = (((2 * Math.PI) / 360) * 30);
 
-let grd = c.createRadialGradient(135.000, 135.000, 0.000, 135.000, 135.000, 150.000);
+}

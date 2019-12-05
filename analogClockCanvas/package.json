@@ -1,0 +1,15 @@
+{
+  "name": "clockcanvas",
+  "version": "1.0.0",
+  "description": "clock",
+  "main": "controller.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "vladislav korotun",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
+}

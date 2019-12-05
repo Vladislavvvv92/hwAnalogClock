@@ -1,3 +1,9 @@
+import {drawNumber} from './logic';
+import {drawStroke} from './logic';
+import {second} from './logic';
+import {minute} from './logic';
+import {hour} from './logic';
+
 drawNumber();
 drawStroke();
 setInterval(second, 1000);
